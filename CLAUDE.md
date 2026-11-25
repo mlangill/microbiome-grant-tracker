@@ -1,7 +1,7 @@
 # Microbiome Grant Tracker — instructions for Claude
 
 This repo builds a public GitHub Pages site listing upcoming microbiome research funding
-calls for the Langille Lab (Dalhousie University, Halifax, NS). Preference order:
+calls for the Langille Lab (Dalhousie University, Halifax, NS). Live site: https://morganlangille.com/microbiome-grant-tracker/ Preference order:
 **Canadian funders and human microbiome calls first**, then open Canadian programs that can
 fund microbiome work (CIHR Project Grant, NSERC DG, NFRF, CFI, …), then international calls
 that Canadian researchers can actually apply to.

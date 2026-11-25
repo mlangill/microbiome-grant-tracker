@@ -2,11 +2,11 @@
 
 A public tracker of upcoming microbiome research funding calls, maintained by the [Langille Lab](https://morganlangille.com/) at Dalhousie University.
 
-**Site:** https://mlangill.github.io/microbiome-grant-tracker/
+**Site:** https://morganlangille.com/microbiome-grant-tracker/
 
 **Focus:** Canadian funders and human microbiome research first, plus open Canadian programs that fund microbiome work (CIHR Project Grant, NSERC Discovery, NFRF, CFI, …) and international calls that Canadian researchers can apply to.
 
-For each call the tracker lists the funder, deadlines (with estimated dates marked), funding amount (converted to CAD for filtering), duration and a link to the official call page. You can filter by region, call type, human microbiome focus, deadline window and a minimum funding amount (per year or total), and subscribe to all deadlines as a calendar feed ([deadlines.ics](https://mlangill.github.io/microbiome-grant-tracker/deadlines.ics)).
+For each call the tracker lists the funder, deadlines (with estimated dates marked), funding amount (converted to CAD for filtering), duration and a link to the official call page. You can filter by region, call type, human microbiome focus, deadline window and a minimum funding amount (per year or total), and subscribe to all deadlines as a calendar feed ([deadlines.ics](https://morganlangille.com/microbiome-grant-tracker/deadlines.ics)).
 
 Listings are refreshed weekly. Always confirm details on the funder's page before applying.
 
