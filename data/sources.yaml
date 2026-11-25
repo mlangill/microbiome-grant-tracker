@@ -1,0 +1,43 @@
+# Sources checked during the weekly update (see CLAUDE.md).
+# priority: 1 = check every week, 2 = check every week if time allows, 3 = monthly-ish
+
+canadian_federal:
+  - {name: CIHR funding opportunities (ResearchNet), url: "https://www.researchnet-recherchenet.ca/rnr16/LoginServlet?language=E", priority: 1, notes: "Search 'microbiome', 'microbiota', III / IHDCYH / INMD institute calls, Project Grant dates and Priority Announcements"}
+  - {name: CIHR Project Grant, url: "https://cihr-irsc.gc.ca/e/49051.html", priority: 1}
+  - {name: NSERC Discovery Grants, url: "https://nserc-crsng.canada.ca/en/funding-opportunity/discovery-grants-individual-program", priority: 1}
+  - {name: NSERC deadlines, url: "https://nserc-crsng.canada.ca/en/funding/professors/application-deadlines-and-notification-decision", priority: 2}
+  - {name: NFRF, url: "https://sshrc-crsh.canada.ca/funding-financement/nfrf-fnfr/index-eng.aspx", priority: 1}
+  - {name: CFI, url: "https://innovation.ca/awards/innovation-fund", priority: 2}
+  - {name: Genome Canada, url: "https://genomecanada.ca/", priority: 2, notes: "Also Genome Atlantic for regional GAPP calls"}
+  - {name: Mitacs, url: "https://www.mitacs.ca/en/programs/accelerate", priority: 3}
+
+canadian_provincial:
+  - {name: Research Nova Scotia, url: "https://researchns.ca/funding-opportunities/", priority: 1}
+  - {name: Nova Scotia Health Innovation Hub, url: "https://innovationhub.nshealth.ca/", priority: 2, notes: "Publishes monthly lists of upcoming grant deadlines"}
+
+canadian_charities_foundations:
+  - {name: Weston Family Microbiome Initiative, url: "https://westonfoundation.ca/weston-family-microbiome-initiative/", priority: 1}
+  - {name: Crohn's and Colitis Canada, url: "https://crohnsandcolitis.ca/research/apply-for-funding", priority: 1}
+  - {name: Cancer Research Society, url: "https://cancerresearchsociety.ca/funding-programs/operating-grants/", priority: 2}
+  - {name: Canadian Cancer Society, url: "https://cancer.ca/en/research/for-researchers/funding-opportunities", priority: 2}
+  - {name: Brain Canada, url: "https://braincanada.ca/", priority: 3}
+  - {name: Heart and Stroke Foundation, url: "https://www.heartandstroke.ca/", priority: 3}
+  - {name: CIFAR (Humans & the Microbiome), url: "https://cifar.ca/", priority: 3}
+
+international_open_to_canada:
+  - {name: EUP OHAMR (CIHR participates), url: "https://ohamr.eu/", priority: 1}
+  - {name: Horizon Europe (Canada associated to Pillar II), url: "https://ec.europa.eu/info/funding-tenders/opportunities/portal/", priority: 2, notes: "Search topics containing 'microbiome' in Cluster 1 (Health) and Cluster 6 (Food)"}
+  - {name: EP PerMed / other ERA-Nets with CIHR, url: "https://www.eppermed.eu/", priority: 3}
+  - {name: Human Frontier Science Program, url: "https://www.hfsp.org/funding/hfsp-funding/research-grants", priority: 2}
+  - {name: Kenneth Rainin Foundation (IBD), url: "https://krfoundation.org/health/grants/innovator-awards/", priority: 2}
+  - {name: Helmsley Charitable Trust (Crohn's), url: "https://helmsleytrust.org/our-focus-areas/crohns-disease/", priority: 3}
+  - {name: NIH (only foreign-eligible NOFOs), url: "https://grants.nih.gov/funding/searchguide/", priority: 3, notes: "Most NIH microbiome NOFOs exclude non-U.S. organisations — only add ones that explicitly allow foreign institutions"}
+
+search_queries:
+  # Broad web searches run each week to catch calls not on the list above
+  - microbiome grant call Canada
+  - microbiome funding opportunity 2027
+  - human microbiome research grant call for proposals
+  - gut microbiota research funding opportunity
+  - CIHR microbiome funding opportunity
+  - microbiome foundation grant letter of intent

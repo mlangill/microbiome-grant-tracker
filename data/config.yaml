@@ -1,0 +1,30 @@
+# Settings used by scripts/build.py
+
+# Approximate exchange rates to CAD, used only to normalise amounts for sorting
+# and the minimum-amount filter. Update occasionally; precision is not important.
+fx_to_cad:
+  CAD: 1.0
+  USD: 1.38
+  EUR: 1.55
+  GBP: 1.80
+
+# Days before a deadline at which a call is flagged "closing soon"
+closing_soon_days: 30
+
+# Relevance score weights (higher = shown first by default)
+score:
+  funder_canadian: 30          # funder_country == CA
+  eligibility:
+    lead: 20                   # Canadian researchers can lead / hold funds directly
+    partner: 10                # Canadian researchers can join as funded partner
+    none: 0
+  category:
+    microbiome: 30             # call explicitly about the microbiome
+    adjacent: 15               # disease/area where microbiome work fits (IBD, cancer, AMR...)
+    open-program: 10           # open competitions usable for microbiome research
+  microbiome_focus:
+    human: 20
+    general: 10
+    animal: 5
+    environmental: 5
+    none: 0

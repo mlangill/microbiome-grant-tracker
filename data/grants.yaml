@@ -1,0 +1,378 @@
+# Microbiome Grant Tracker — grant calls
+#
+# One entry per funding call. See CLAUDE.md for the full schema and update rules.
+# Key rules:
+#   - `url` must point to the funder's own page (or the official call document).
+#   - Only record amounts/dates that were confirmed. Anything inferred from a past
+#     cycle or a university research-office page goes in `needs_verification`, and
+#     estimated dates get `approx: true`.
+#   - Closed calls are NOT deleted; the site archives them automatically.
+
+- id: weston-mint-call-1
+  title: Microbiome Innovations for New Therapies (MINT) – Grant Call I
+  funder: Weston Family Foundation
+  funder_country: CA
+  category: microbiome
+  microbiome_focus: human
+  canadian_eligibility: lead
+  deadlines:
+    - {type: LOI, date: 2026-10-30}
+    - {type: full application (invited), date: 2027-02-15}
+  amount: {currency: CAD, max_total: 500000, note: "Stage I up to $500K over max 30 months; successful projects can compete for Stage II up to $2M over 36 months"}
+  duration_years: {max: 2.5}
+  url: https://westonfoundation.ca/weston-family-microbiome-initiative/
+  summary: Translational projects developing microbiome-based interventions for chronic diseases affecting Canadians. LOI stage closed; full proposals by invitation.
+  eligibility: Principal applicants at or above Assistant Professor, working in Canada at least 50% of the time.
+  tags: [translational, therapeutics, foundation]
+  last_verified: 2026-11-25
+  added: 2026-11-25
+
+- id: weston-mint-call-2
+  title: Microbiome Innovations for New Therapies (MINT) – Grant Call II
+  funder: Weston Family Foundation
+  funder_country: CA
+  category: microbiome
+  microbiome_focus: human
+  canadian_eligibility: lead
+  anticipated: true
+  deadlines: []
+  amount: {currency: CAD, max_total: 500000, note: "Stage I up to $500K over max 30 months (up to 18 projects per call)"}
+  duration_years: {max: 2.5}
+  url: https://westonfoundation.ca/weston-family-microbiome-initiative/
+  summary: Second MINT call, announced by the Foundation for 2027. Dates not yet released — watch for the LOI deadline.
+  eligibility: Expected to match Call I (Assistant Professor or above, working in Canada at least 50% of the time).
+  tags: [translational, therapeutics, foundation]
+  needs_verification: [deadlines]
+  last_verified: 2026-11-25
+  added: 2026-11-25
+
+- id: eup-ohamr-jtc-2027
+  title: EUP OHAMR Joint Transnational Call 2027 – Understand, Model and Stop AMR Transmission
+  funder: European Partnership on One Health AMR (CIHR participating)
+  funder_country: INTL
+  category: microbiome
+  microbiome_focus: human
+  canadian_eligibility: partner
+  deadlines:
+    - {type: pre-proposal, date: 2027-02-01}
+    - {type: full proposal (invited), date: 2027-06-23}
+  amount: {currency: CAD, max_total: 600000, note: "CIHR commitment of $600K total (≈1 funded Canadian partner); other partners funded by their national agencies"}
+  duration_years: {max: 3}
+  url: https://ohamr.eu/calls/joint-transnational-call-2027/
+  summary: Topic 2 covers the role of host commensal microorganisms (incl. fungi) in AMR dynamics and selective decolonisation. CIHR funds topics 1–3, human health setting only.
+  eligibility: Consortia of 3–6 partners from ≥3 participating countries (≥2 from EU/associated countries); max 2 partners per funder. Confirm eligibility with CIHR.
+  tags: [AMR, international, consortium, CIHR]
+  last_verified: 2026-11-25
+  added: 2026-11-25
+
+- id: horizon-cl6-2027-livestock-microbiome
+  title: Horizon Europe – Microbiome for terrestrial livestock sustainability and health (One Health)
+  funder: European Commission (Horizon Europe, Cluster 6)
+  funder_country: EU
+  category: microbiome
+  microbiome_focus: animal
+  canadian_eligibility: lead
+  deadlines:
+    - {type: application, date: 2027-09-23}
+  amount: {currency: EUR, note: "Topic budget €11.8M (RIA); per-project size not yet confirmed"}
+  url: https://www.horizon-europe.gouv.fr/microbiome-terrestrial-livestock-sustainability-and-health-within-one-health-approach-41817
+  summary: "Topic HORIZON-CL6-2027-02-FARM2FORK-03 (opens Apr 20, 2027): livestock microbiome research within a One Health framework, including links to human and environmental health."
+  eligibility: Canada is associated to Horizon Europe Pillar II, so Canadian organisations can lead or join consortia and receive funding directly.
+  tags: [one-health, animal, international, consortium]
+  last_verified: 2026-11-25
+  added: 2026-11-25
+
+- id: horizon-cl6-2027-food-microbiome-commercialization
+  title: Horizon Europe – Towards commercialization of food systems microbiome solutions
+  funder: European Commission (Horizon Europe, Cluster 6)
+  funder_country: EU
+  category: microbiome
+  microbiome_focus: general
+  canadian_eligibility: lead
+  deadlines:
+    - {type: application, date: 2027-09-23}
+  amount: {currency: EUR, note: "Innovation Action; budget not yet confirmed"}
+  url: https://www.horizon-europe.gouv.fr/towards-commercialization-food-systems-microbiome-solutions-41793
+  summary: "Topic HORIZON-CL6-2027-02-FARM2FORK-07 (Innovation Action): scaling and in-situ testing of microbiome-based products for food systems."
+  eligibility: Canada is associated to Horizon Europe Pillar II (consortium participation, direct funding).
+  tags: [food-systems, innovation, international, consortium]
+  needs_verification: [deadlines, amount]
+  last_verified: 2026-11-25
+  added: 2026-11-25
+
+- id: ccc-gia-2027
+  title: Crohn's and Colitis Canada – Grants-in-Aid of Research (2027 competition)
+  funder: Crohn's and Colitis Canada
+  funder_country: CA
+  category: adjacent
+  microbiome_focus: human
+  canadian_eligibility: lead
+  anticipated: true
+  deadlines:
+    - {type: notice of intent, date: 2027-01-22, approx: true}
+    - {type: full application, date: 2027-02-22, approx: true}
+  amount: {currency: CAD, max_per_year: 125000, note: "Up to $125K/year for up to 3 years; 4 grants funded in 2026 (16% success rate)"}
+  duration_years: {max: 3}
+  url: https://crohnsandcolitis.ca/research/apply-for-funding
+  summary: IBD-related research projects. Dates estimated from the 2026 cycle (launch Dec 17, NOI Jan 23, full application Feb 23).
+  eligibility: PI must reside in Canada and be a member of the Crohn's and Colitis Canada IBD Research Institute.
+  tags: [IBD, foundation]
+  needs_verification: [deadlines]
+  last_verified: 2026-11-25
+  added: 2026-11-25
+
+- id: rainin-innovator-2028
+  title: Kenneth Rainin Foundation – Innovator Awards (IBD), next cycle
+  funder: Kenneth Rainin Foundation
+  funder_country: US
+  category: adjacent
+  microbiome_focus: human
+  canadian_eligibility: lead
+  anticipated: true
+  deadlines:
+    - {type: letter of inquiry, date: 2027-09-30, approx: true}
+  amount: {currency: USD, max_total: 300000, note: "Up to US$150K (individual) or US$300K (collaborative) for 12 months"}
+  duration_years: {max: 1}
+  url: https://krfoundation.org/health/grants/innovator-awards/
+  summary: High-risk IBD research worldwide. The 2027-cycle LOI window (Aug 3 – Sep 30, 2026) has closed; date shown is estimated for the next cycle.
+  eligibility: Open to researchers worldwide; one LOI per PI.
+  tags: [IBD, foundation, international, high-risk]
+  needs_verification: [deadlines]
+  last_verified: 2026-11-25
+  added: 2026-11-25
+
+- id: crs-operating-2027
+  title: Cancer Research Society – Operating Grants (2027 competition)
+  funder: Cancer Research Society
+  funder_country: CA
+  category: adjacent
+  microbiome_focus: none
+  canadian_eligibility: lead
+  anticipated: true
+  deadlines:
+    - {type: letter of intent, date: 2026-12-10, approx: true}
+    - {type: full application (invited), date: 2027-02-11, approx: true}
+  amount: {currency: CAD, max_per_year: 70000, max_total: 140000, note: "Up to $140K over 2 years; indirect costs not eligible"}
+  duration_years: {max: 2}
+  url: https://cancerresearchsociety.ca/funding-programs/operating-grants/
+  summary: Fundamental and early translational cancer research (relevant for tumour/cancer microbiome work). Dates estimated from the 2026 cycle (LOI Dec 10, full application Feb 11).
+  eligibility: PI and co-applicants must hold a research position at a Canadian institution. Clinical trials not eligible.
+  tags: [cancer, foundation]
+  needs_verification: [deadlines]
+  last_verified: 2026-11-25
+  added: 2026-11-25
+
+- id: cihr-project-spring-2027
+  title: CIHR Project Grant – Spring 2027
+  funder: Canadian Institutes of Health Research (CIHR)
+  funder_country: CA
+  category: open-program
+  microbiome_focus: none
+  canadian_eligibility: lead
+  deadlines:
+    - {type: registration, date: 2027-02-03}
+    - {type: application, date: 2027-03-03}
+  amount: {currency: CAD, typical_total: 943340, note: "No fixed cap; Spring 2025 average award was $943,340 over 4.48 years. ~$800M available across Fall 2026 + Spring 2027"}
+  duration_years: {min: 1, max: 5}
+  url: https://cihr-irsc.gc.ca/e/49051.html
+  summary: Investigator-initiated health research in any area. Max two applications per competition as Nominated Principal Applicant.
+  eligibility: Independent researchers at eligible Canadian institutions. Research security requirements apply.
+  tags: [CIHR, operating]
+  last_verified: 2026-11-25
+  added: 2026-11-25
+
+- id: cihr-project-fall-2027
+  title: CIHR Project Grant – Fall 2027
+  funder: Canadian Institutes of Health Research (CIHR)
+  funder_country: CA
+  category: open-program
+  microbiome_focus: none
+  canadian_eligibility: lead
+  anticipated: true
+  deadlines:
+    - {type: registration, date: 2027-08-11, approx: true}
+    - {type: application, date: 2027-09-08, approx: true}
+  amount: {currency: CAD, typical_total: 943340, note: "No fixed cap; recent average ≈ $0.94M over ~4.5 years"}
+  duration_years: {min: 1, max: 5}
+  url: https://cihr-irsc.gc.ca/e/49051.html
+  summary: Dates estimated from the Fall 2026 cycle (registration Aug 12, application Sep 9).
+  eligibility: Independent researchers at eligible Canadian institutions.
+  tags: [CIHR, operating]
+  needs_verification: [deadlines]
+  last_verified: 2026-11-25
+  added: 2026-11-25
+
+- id: nserc-dg-2028
+  title: NSERC Discovery Grants – 2028 competition
+  funder: Natural Sciences and Engineering Research Council (NSERC)
+  funder_country: CA
+  category: open-program
+  microbiome_focus: none
+  canadian_eligibility: lead
+  anticipated: true
+  deadlines:
+    - {type: notice of intent, date: 2027-08-02, approx: true}
+    - {type: application, date: 2027-11-01, approx: true}
+  amount: {currency: CAD, typical_per_year: 46967, note: "No cap on request; 2025 average award ≈ $47K/year. Early-career researchers may receive a $12,500 Launch Supplement"}
+  duration_years: {max: 5}
+  url: https://nserc-crsng.canada.ca/en/funding-opportunity/discovery-grants-individual-program
+  summary: Long-term program funding for natural sciences/engineering research (e.g., microbial ecology, methods). NOI is mandatory. NSERC's usual dates are NOI Aug 1 and application Nov 1 (or next business day).
+  eligibility: One Discovery Grant at a time; current holders may reapply only in the final year of their award.
+  tags: [NSERC, operating]
+  needs_verification: [deadlines]
+  last_verified: 2026-11-25
+  added: 2026-11-25
+
+- id: nfrf-exploration-2027
+  title: NFRF Exploration – 2027 competition
+  funder: New Frontiers in Research Fund (NFRF)
+  funder_country: CA
+  category: open-program
+  microbiome_focus: none
+  canadian_eligibility: lead
+  anticipated: true
+  deadlines:
+    - {type: notice of intent, date: 2027-08-18, approx: true}
+    - {type: application, date: 2027-10-20, approx: true}
+  amount: {currency: CAD, max_per_year: 125000, max_total: 250000, note: "Up to $125K/year including 25% indirect costs, up to 2 years"}
+  duration_years: {max: 2}
+  url: https://sshrc-crsh.canada.ca/funding-financement/nfrf-fnfr/exploration/2026/competition-concours-eng.aspx
+  summary: High-risk, high-reward interdisciplinary research. Dates estimated from the 2026 competition (NOI Aug 18, application Oct 20); link is to the 2026 page until the 2027 call launches (usually spring).
+  eligibility: Teams of at least two; individuals may hold only one Exploration grant at a time.
+  tags: [NFRF, high-risk, interdisciplinary]
+  needs_verification: [deadlines]
+  last_verified: 2026-11-25
+  added: 2026-11-25
+
+- id: nfrf-transformation-next
+  title: NFRF Transformation – next competition
+  funder: New Frontiers in Research Fund (NFRF)
+  funder_country: CA
+  category: open-program
+  microbiome_focus: none
+  canadian_eligibility: lead
+  anticipated: true
+  deadlines: []
+  amount: {currency: CAD, max_per_year: 4000000, max_total: 24000000, note: "Up to $4M/year (incl. indirect costs) for up to 6 years"}
+  duration_years: {max: 6}
+  url: https://sshrc-crsh.canada.ca/funding-financement/nfrf-fnfr/transformation/transformation-eng.aspx
+  summary: Large-scale, Canadian-led interdisciplinary projects. Expected to launch in spring 2027 with NOI → LOI → full application stages.
+  eligibility: Interdisciplinary teams of five or more members.
+  tags: [NFRF, team, large-scale]
+  needs_verification: [deadlines]
+  last_verified: 2026-11-25
+  added: 2026-11-25
+
+- id: cfi-innovation-fund-2027
+  title: CFI Innovation Fund 2027
+  funder: Canada Foundation for Innovation (CFI)
+  funder_country: CA
+  category: open-program
+  microbiome_focus: none
+  canadian_eligibility: lead
+  deadlines:
+    - {type: notice of intent, date: 2026-09-29}
+    - {type: proposal, date: 2027-02-02}
+  amount: {currency: CAD, note: "Minimum request $1M; CFI funds up to 40% of infrastructure costs; $325M competition budget"}
+  url: https://innovation.ca/awards/innovation-fund
+  summary: Team-based research infrastructure. Only institutions that filed a notice of intent can submit proposals; internal institutional deadlines are earlier.
+  eligibility: Applied for by institutions; check your institution's internal process.
+  tags: [CFI, infrastructure, institutional]
+  last_verified: 2026-11-25
+  added: 2026-11-25
+
+- id: cfi-jelf
+  title: CFI John R. Evans Leaders Fund (JELF)
+  funder: Canada Foundation for Innovation (CFI)
+  funder_country: CA
+  category: open-program
+  microbiome_focus: none
+  canadian_eligibility: lead
+  deadlines:
+    - {type: CFI deadline, date: 2027-02-15}
+    - {type: CFI deadline, date: 2027-06-15}
+    - {type: CFI deadline, date: 2027-10-15}
+  amount: {currency: CAD, max_total: 800000, note: "Infrastructure; CFI funds up to 40% of eligible costs (projects up to ~$2M total eligible cost) — check your institution's allocation"}
+  url: https://innovation.ca/awards/john-r-evans-leaders-fund
+  summary: Research infrastructure to attract/retain researchers. CFI accepts JELF applications Feb 15, Jun 15 and Oct 15; institutions run internal selection months earlier (some have cancelled the Feb 2027 intake).
+  eligibility: Applied for by institutions from their JELF allocation.
+  tags: [CFI, infrastructure, institutional]
+  needs_verification: [amount, url]
+  last_verified: 2026-11-25
+  added: 2026-11-25
+
+- id: nserc-alliance
+  title: NSERC Alliance Grants (Advantage / Society)
+  funder: Natural Sciences and Engineering Research Council (NSERC)
+  funder_country: CA
+  category: open-program
+  microbiome_focus: none
+  canadian_eligibility: lead
+  rolling: true
+  deadlines: []
+  amount: {currency: CAD, max_per_year: 500000, note: "Alliance Society capped at $500K/year (since Dec 2025); Advantage scales with partner cash"}
+  duration_years: {min: 1, max: 5}
+  url: https://www.nserc-crsng.gc.ca/Innovate-Innover/alliance-alliance/index_eng.asp
+  summary: Partnered research with private, public or not-for-profit organisations (e.g., industry microbiome/sequencing partners). Continuous intake; allow 5–24 weeks for review.
+  eligibility: Canadian university researchers with at least one partner organisation.
+  tags: [NSERC, partnership, rolling]
+  last_verified: 2026-11-25
+  added: 2026-11-25
+
+- id: mitacs-accelerate
+  title: Mitacs Accelerate
+  funder: Mitacs
+  funder_country: CA
+  category: open-program
+  microbiome_focus: none
+  canadian_eligibility: lead
+  rolling: true
+  deadlines: []
+  amount: {currency: CAD, note: "$15K per 4–6 month internship unit (partner contributes from $7.5K); projects 4 months to 5 years"}
+  duration_years: {max: 5}
+  url: https://www.mitacs.ca/en/programs/accelerate
+  summary: Industry/not-for-profit partnered internships for graduate students and postdocs. Applications accepted year-round.
+  eligibility: Intern must be a graduate student or postdoc at a Canadian institution; requires a partner organisation.
+  tags: [training, partnership, rolling]
+  last_verified: 2026-11-25
+  added: 2026-11-25
+
+- id: hfsp-research-grant-2028
+  title: HFSP Research Grants – Award Year 2028
+  funder: Human Frontier Science Program
+  funder_country: INTL
+  category: open-program
+  microbiome_focus: none
+  canadian_eligibility: lead
+  anticipated: true
+  deadlines:
+    - {type: LOI initiation, date: 2027-03-16, approx: true}
+    - {type: letter of intent, date: 2027-03-25, approx: true}
+  amount: {currency: USD, max_per_year: 500000, note: "US$300K/yr (2-member team) to US$500K/yr (4-member team) for 3 years"}
+  duration_years: {max: 3}
+  url: https://www.hfsp.org/funding/hfsp-funding/research-grants
+  summary: Frontier basic life-science research by new international, interdisciplinary teams. Dates estimated from the 2027 award year (LOI initiation Mar 17, submission Mar 26, 2026).
+  eligibility: International teams; principal applicant must be based in an HFSP member country.
+  tags: [international, basic-science, team]
+  needs_verification: [deadlines, eligibility]
+  last_verified: 2026-11-25
+  added: 2026-11-25
+
+- id: rns-e2g-2026
+  title: Research Nova Scotia – Ear to the Ground (E2G) Research Investments
+  funder: Research Nova Scotia
+  funder_country: CA
+  category: open-program
+  microbiome_focus: none
+  canadian_eligibility: lead
+  deadlines:
+    - {type: stage 1 application, date: 2026-09-04}
+    - {type: full proposal (invited), date: 2027-02-04}
+  amount: {currency: CAD, note: "Amount not stated on the call page"}
+  url: https://researchns.ca/ear-to-the-ground-research-investments-e2g/
+  summary: Nova Scotia research with a clear line of sight to economic impact (life sciences and health sciences included). Invitations to full proposal Dec 11, 2026; pitches mid-late Feb 2027.
+  eligibility: Project lead and host organisation must be based in Nova Scotia; named end users required.
+  tags: [Nova Scotia, provincial, economic-impact]
+  needs_verification: [amount]
+  last_verified: 2026-11-25
+  added: 2026-11-25

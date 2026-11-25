@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Microbiome Grant Tracker</title>
+  <meta name="description" content="Upcoming microbiome research funding calls, with a focus on Canadian funders and human microbiome research.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="masthead">
+    <div class="wrap">
+      <h1>Microbiome Grant Tracker</h1>
+      <p class="lede">Upcoming funding calls for microbiome research — Canadian funders and human microbiome calls first, plus open Canadian programs that fund microbiome work.</p>
+      <p class="meta">
+        <span id="updated">Loading…</span>
+        · <a href="deadlines.ics" id="ics-link">Subscribe to deadlines (.ics)</a>
+        · <a href="https://github.com/mlangill/microbiome-grant-tracker">Source &amp; data on GitHub</a>
+      </p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="filters" aria-label="Filters">
+      <div class="row">
+        <label class="grow">
+          <span class="lbl">Search</span>
+          <input type="search" id="f-search" placeholder="Funder, title, topic…">
+        </label>
+        <label>
+          <span class="lbl">Region</span>
+          <select id="f-region">
+            <option value="all">All funders</option>
+            <option value="ca">Canadian funders only</option>
+            <option value="eligible">Canadian-eligible (lead or partner)</option>
+          </select>
+        </label>
+        <label>
+          <span class="lbl">Deadline within</span>
+          <select id="f-window">
+            <option value="any">Any time</option>
+            <option value="30">30 days</option>
+            <option value="90">90 days</option>
+            <option value="180">6 months</option>
+            <option value="365">12 months</option>
+          </select>
+        </label>
+        <label>
+          <span class="lbl">Sort by</span>
+          <select id="f-sort">
+            <option value="relevance">Relevance</option>
+            <option value="deadline">Next deadline</option>
+            <option value="amount">Amount (high → low)</option>
+            <option value="funder">Funder</option>
+          </select>
+        </label>
+      </div>
+      <div class="row">
+        <fieldset class="chips">
+          <legend class="lbl">Type</legend>
+          <label class="chip"><input type="checkbox" id="f-cat-microbiome" checked> Microbiome calls</label>
+          <label class="chip"><input type="checkbox" id="f-cat-adjacent" checked> Related areas</label>
+          <label class="chip"><input type="checkbox" id="f-cat-open" checked> Open programs</label>
+          <label class="chip"><input type="checkbox" id="f-human"> Human microbiome only</label>
+        </fieldset>
+        <fieldset class="chips amount">
+          <legend class="lbl">Minimum amount (CAD)</legend>
+          <select id="f-min" aria-label="Minimum amount">
+            <option value="0">No minimum</option>
+            <option value="25000">$25K</option>
+            <option value="50000">$50K</option>
+            <option value="100000">$100K</option>
+            <option value="250000">$250K</option>
+            <option value="500000">$500K</option>
+            <option value="1000000">$1M</option>
+          </select>
+          <div class="seg" role="radiogroup" aria-label="Amount basis">
+            <label><input type="radio" name="f-basis" value="year" checked> per year</label>
+            <label><input type="radio" name="f-basis" value="total"> total</label>
+          </div>
+          <label class="chip"><input type="checkbox" id="f-unknown" checked> include unknown amounts</label>
+        </fieldset>
+        <fieldset class="chips">
+          <legend class="lbl">View</legend>
+          <div class="seg" role="radiogroup" aria-label="Layout">
+            <label><input type="radio" name="f-view" value="table" checked> Table</label>
+            <label><input type="radio" name="f-view" value="cards"> Cards</label>
+          </div>
+          <label class="chip"><input type="checkbox" id="f-archive"> Show closed</label>
+        </fieldset>
+      </div>
+      <p class="count" id="count" aria-live="polite"></p>
+    </section>
+
+    <section id="results"></section>
+
+    <section class="notes">
+      <h2>How to read this</h2>
+      <ul>
+        <li><b>Relevance</b> (●●●) favours Canadian funders, calls Canadian researchers can lead, microbiome-specific calls, and human microbiome work.</li>
+        <li><b>Estimated</b> dates are projected from the previous cycle and marked “~”. Entries flagged <span class="flag">verify</span> have details not yet confirmed on the funder's page.</li>
+        <li><b>Amounts</b> are converted to CAD at approximate rates for filtering; “avg.” means a typical award rather than a maximum. Always confirm on the funder's site before applying.</li>
+        <li>Listings are refreshed weekly. Closed calls move to the archive (“Show closed”) because many recur every year.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    Maintained by the <a href="https://morganlangille.com/">Langille Lab</a>, Dalhousie University · MIT licence
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
